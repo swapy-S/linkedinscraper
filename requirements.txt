@@ -23,7 +23,7 @@ googletrans==2.4.0
 gunicorn==19.7.1
 mysql-connector-python==8.0.23
 mysqlclient==2.0.3
-pandas==1.1.2
+pandas==1.2.4
 Pillow==8.0.1
 pyexcel==0.6.6
 pyexcel-io==0.6.4
