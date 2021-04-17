@@ -3,7 +3,6 @@ import re
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-from bs4 import BeautifulSoup
 import requests
 from pandas import DataFrame
 from selenium.webdriver.support.ui import WebDriverWait
