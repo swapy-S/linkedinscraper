@@ -66,7 +66,7 @@ def output():
  
 def scraper(keys,nopages,email,password1):
     keywords = keys
-    browser = webdriver.Chrome("/usr/local/bin/chromedriver")
+    browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
     browser.get("https://www.linkedin.com/search/results/content/?keywords=AI&origin=SWITCH_SEARCH_VERTICAL")
     signin = browser.find_element_by_link_text("Sign in")
     signin.click()
