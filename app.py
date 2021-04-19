@@ -118,9 +118,9 @@ def scraper(keys,nopages,email,password1):
         for i in designations:
             d.append(i.text)
 
-        elements = browser.find_elements_by_css_selector("div.t-12 a.t-12")
+        elements_1 = browser.find_elements_by_css_selector("div.t-12 a.t-12")
         #time.sleep(3)
-        for element in elements:
+        for element in elements_1:
             ele = element.get_attribute("href")
             browser.execute_script("window.open('');")
             browser.switch_to.window(browser.window_handles[1])
